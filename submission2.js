@@ -7,7 +7,16 @@ const findFrequency = function(array) {
 };
 
 const isPalindrome = function(str) {
-  // your code here - don't forget to return a boolean!
+  const isPalindrome = function(str) {
+
+   const stringLength = string.length;
+
+   for (let i = 0; i < stringLength / 2; i++) {
+       if (string[i] !== str[stringLength - 1 - i]) {
+           return 'false';
+       }
+   }
+   return 'true';
 };
 
 const largestPair = function(array) {
