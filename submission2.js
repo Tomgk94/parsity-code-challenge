@@ -5,13 +5,17 @@ const findSum = function (array) {
     }
     return sum;
  };
+
+ const findFrequency = function(array) {
+    // your code here - don't forget to return an object!
+  };
   
 const isPalindrome = function (str) {  
-        var length = str.length;  
+     var length = str.length;  
         
-        for (let i = 0; i < length / 2; i++) {   
-            if (str[i] !== str[length - 1 - i]) {  
-                return false;  
+    for (let i = 0; i < length / 2; i++) {   
+        if (str[i] !== str[length - 1 - i]) {  
+            return false;  
             }  
         }  
         return true 
@@ -25,7 +29,6 @@ const largestPair = function(array) {
             product.push(ans);
             }
             return Math.max(...product);
-
         };
 
   
