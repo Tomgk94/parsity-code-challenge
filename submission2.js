@@ -1,36 +1,52 @@
-const findSum = function(array) {
-  let sum = 0;
+const findSum = function (array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return sum;
+ };
 
-  array.forEach(item => {sum += item;});
+  function findFrequency(array) {
+    
+}
   
-  return sum;
-};
+  const isPalindrome = function (str) {  
+        var length = str.length;  
+        
+        for (let i = 0; i < length / 2; i++) {   
+            if (str[i] !== str[length - 1 - i]) {  
+                return false;  
+            }  
+        }  
+        return true 
+  };
+  
+  const largestPair = function(array) {
 
-const findFrequency = function(array) {
-  // your code here - don't forget to return an object!
-};
+    var product = [];
+            for (var i = 0; i < array.length-1; i++) {
+            let ans = array[i] * array[i+1];
+            product.push(ans);
+            }
+            return Math.max(...product);
 
-const isPalindrome = function(str) {
-  const isPalindrome = function(str) {
+        };
 
-   const stringLength = string.length;
-
-   for (let i = 0; i < stringLength / 2; i++) {
-       if (string[i] !== str[stringLength - 1 - i]) {
-           return 'false';
-       }
-   }
-   return 'true';
-};
-
-const largestPair = function(array) {
-  // your code here - don't forget to return a number!
-};
-
-const removeParenth = function(str) {
-  // your code here - don't forget to return a string!
-};
-
+  
+  const removeParenth = function(str) {
+   return str.replace(/ *\([^)]*\) */g, "");
+   };
+  
 const scoreScrabble = function(str) {
-  // your code here - don't forget to return a number!
-};
+ str = str.toLowerCase();
+   
+  const scores = { a: 1, e: 1, i: 1, o: 1, u: 1, l: 1, n: 1, r: 1, s: 1, t: 1, d: 2, g: 2, b: 3, c: 3, m: 3, p: 3, f: 4, h: 4,
+  v: 4, w: 4, y: 4, k: 5, j: 8, x: 8, q: 10, z: 10,}
+
+  var sum = 0;
+ for (var i = 0; i < str.length; ++i) {
+    sum += scores[str.charAt(i)] || 0;
+ }
+
+ return(sum);
+ };
