@@ -5,12 +5,8 @@ const findSum = function (array) {
     }
     return sum;
  };
-
-  function findFrequency(array) {
-    
-}
   
-  const isPalindrome = function (str) {  
+const isPalindrome = function (str) {  
         var length = str.length;  
         
         for (let i = 0; i < length / 2; i++) {   
@@ -21,7 +17,7 @@ const findSum = function (array) {
         return true 
   };
   
-  const largestPair = function(array) {
+const largestPair = function(array) {
 
     var product = [];
             for (var i = 0; i < array.length-1; i++) {
@@ -33,7 +29,7 @@ const findSum = function (array) {
         };
 
   
-  const removeParenth = function(str) {
+const removeParenth = function(str) {
    return str.replace(/ *\([^)]*\) */g, "");
    };
   
